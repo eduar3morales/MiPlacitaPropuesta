@@ -14,6 +14,8 @@
 		84B86D011AE2612A00B14D4D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84B86D001AE2612A00B14D4D /* Images.xcassets */; };
 		84B86D041AE2612A00B14D4D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84B86D021AE2612A00B14D4D /* LaunchScreen.xib */; };
 		84B86D101AE2612A00B14D4D /* MiPlacitaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B86D0F1AE2612A00B14D4D /* MiPlacitaTests.m */; };
+		84B86D1F1AE2667A00B14D4D /* agricultura.png in Resources */ = {isa = PBXBuildFile; fileRef = 84B86D1E1AE2667A00B14D4D /* agricultura.png */; };
+		84B86D221AE267B200B14D4D /* Iniciar.m in Sources */ = {isa = PBXBuildFile; fileRef = 84B86D211AE267B200B14D4D /* Iniciar.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,9 @@
 		84B86D091AE2612A00B14D4D /* MiPlacitaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MiPlacitaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		84B86D0E1AE2612A00B14D4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84B86D0F1AE2612A00B14D4D /* MiPlacitaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MiPlacitaTests.m; sourceTree = "<group>"; };
+		84B86D1E1AE2667A00B14D4D /* agricultura.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = agricultura.png; sourceTree = "<group>"; };
+		84B86D201AE267B200B14D4D /* Iniciar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Iniciar.h; sourceTree = "<group>"; };
+		84B86D211AE267B200B14D4D /* Iniciar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Iniciar.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,11 +86,11 @@
 		84B86CF21AE2612A00B14D4D /* MiPlacita */ = {
 			isa = PBXGroup;
 			children = (
-				84B86CF71AE2612A00B14D4D /* AppDelegate.h */,
-				84B86CF81AE2612A00B14D4D /* AppDelegate.m */,
-				84B86CFA1AE2612A00B14D4D /* ViewController.h */,
-				84B86CFB1AE2612A00B14D4D /* ViewController.m */,
-				84B86CFD1AE2612A00B14D4D /* Main.storyboard */,
+				84B86D231AE267BE00B14D4D /* Model */,
+				84B86D1E1AE2667A00B14D4D /* agricultura.png */,
+				84B86D191AE2615800B14D4D /* Delegate */,
+				84B86D1A1AE2616300B14D4D /* Controller */,
+				84B86D1B1AE261B100B14D4D /* View */,
 				84B86D001AE2612A00B14D4D /* Images.xcassets */,
 				84B86D021AE2612A00B14D4D /* LaunchScreen.xib */,
 				84B86CF31AE2612A00B14D4D /* Supporting Files */,
@@ -117,6 +122,42 @@
 				84B86D0E1AE2612A00B14D4D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		84B86D191AE2615800B14D4D /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				84B86CF71AE2612A00B14D4D /* AppDelegate.h */,
+				84B86CF81AE2612A00B14D4D /* AppDelegate.m */,
+			);
+			name = Delegate;
+			sourceTree = "<group>";
+		};
+		84B86D1A1AE2616300B14D4D /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				84B86CFA1AE2612A00B14D4D /* ViewController.h */,
+				84B86CFB1AE2612A00B14D4D /* ViewController.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		84B86D1B1AE261B100B14D4D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				84B86CFD1AE2612A00B14D4D /* Main.storyboard */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		84B86D231AE267BE00B14D4D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84B86D201AE267B200B14D4D /* Iniciar.h */,
+				84B86D211AE267B200B14D4D /* Iniciar.m */,
+			);
+			name = Model;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -200,6 +241,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				84B86CFF1AE2612A00B14D4D /* Main.storyboard in Resources */,
+				84B86D1F1AE2667A00B14D4D /* agricultura.png in Resources */,
 				84B86D041AE2612A00B14D4D /* LaunchScreen.xib in Resources */,
 				84B86D011AE2612A00B14D4D /* Images.xcassets in Resources */,
 			);
@@ -222,6 +264,7 @@
 				84B86CFC1AE2612A00B14D4D /* ViewController.m in Sources */,
 				84B86CF91AE2612A00B14D4D /* AppDelegate.m in Sources */,
 				84B86CF61AE2612A00B14D4D /* main.m in Sources */,
+				84B86D221AE267B200B14D4D /* Iniciar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +459,7 @@
 				84B86D151AE2612A00B14D4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84B86D161AE2612A00B14D4D /* Build configuration list for PBXNativeTarget "MiPlacitaTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +468,7 @@
 				84B86D181AE2612A00B14D4D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
